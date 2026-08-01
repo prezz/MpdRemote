@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Night keeps Material's adaptive text color: no android:textColor override on top of the base. -->
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+</resources>

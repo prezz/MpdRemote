@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".ui.partitions.PartitionsActivity" >
+
+    <include layout="@layout/view_toolbar" />
+
+    <ListView
+        android:id="@+id/partitions_list_view_browse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:fastScrollEnabled="false" />
+
+    <ProgressBar
+        android:id="@+id/partitions_progress_bar_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/partitions_choice_bar"
+        android:layout_width="match_parent"
+        android:background="?choiceBarColor"
+        android:elevation="50px"
+        android:layout_height="50dp" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <ImageButton
+            android:id="@+id/partitions_add_button"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:contentDescription="@string/partitions_create_button"
+            android:scaleType="fitCenter"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_add" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+</LinearLayout>

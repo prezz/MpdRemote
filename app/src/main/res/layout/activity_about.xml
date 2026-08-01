@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.AboutActivity" >
+
+    <include layout="@layout/view_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_covers_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="80dp"/>
+
+        <ImageView
+            android:id="@+id/about_lastfm_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/about_cover_image"
+            android:src="@drawable/lastfm_logo"
+            android:layout_marginBottom="40dp" />
+
+        <TextView
+            android:id="@+id/about_source_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_source_code_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/link_color"
+            android:layout_marginBottom="40dp" />
+
+        <View
+            android:id="@+id/about_hidden_lyngdorf_view"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/about_hidden_lyngdorf_view"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Light (default) colors. Dark equivalents live in values-night/colors.xml. -->
+<resources>
+    <color name="icon_color">#ff2d2b2b</color>
+    <color name="playlist_drag_color">#c0e3e3e3</color>
+    <color name="red_focus_color">#ffd32a2a</color>
+    <!-- Day-only body text color (a bit darker than Material's default). Night uses the Material
+         default; see values-night/styles.xml. -->
+    <color name="text_color">#ff2d2b2b</color>
+
+    <!-- Dedicated dark colors for the app bar gradient, so the bar stays dark regardless of the
+         adaptive colorPrimary below. -->
+    <color name="app_bar_gradient_start">#ff0f0f0f</color>
+    <color name="app_bar_gradient_end">#ff303030</color>
+
+    <!-- colorPrimary is the app's adaptive accent (checkboxes, switches, category titles, etc.). -->
+    <color name="color_primary">#ff1a73e8</color>
+    <color name="color_on_primary">#ffffffff</color>
+    <color name="color_primary_dark">#ff0f0f0f</color>
+
+    <color name="color_accent">#ff1a73e8</color>
+
+    <color name="link_color">#ff3366bb</color>
+    <color name="divider_color">#ffaaaaaa</color>
+</resources>

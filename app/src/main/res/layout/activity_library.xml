@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".ui.library.LibraryActivity" >
+
+    <include layout="@layout/view_toolbar" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/library_view_pager_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/view_mini_control" />
+
+    <LinearLayout
+        android:id="@+id/library_choice_bar"
+        android:layout_width="match_parent"
+        android:background="?choiceBarColor"
+        android:elevation="50px"
+        android:layout_height="50dp" >
+
+        <ImageButton
+            android:id="@+id/library_button_filter_menu"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:contentDescription="@string/library_filter_menu"
+            android:scaleType="fitStart"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_filter" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/library_button_choice_menu"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/library_choice_menu"
+            android:scaleType="center"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_choice_menu_2" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/library_button_control_menu"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:contentDescription="@string/library_control_menu"
+            android:scaleType="fitEnd"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_expand" />
+
+    </LinearLayout>
+
+</LinearLayout>

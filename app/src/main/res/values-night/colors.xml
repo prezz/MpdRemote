@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark (night) colors, overriding values/colors.xml when the night theme is active. -->
+<resources>
+    <!-- Icons are tinted with ?iconColor. Match the greyish body text (Material's ~70% white
+         secondary text color) rather than a bright near-white. -->
+    <color name="icon_color">#b3ffffff</color>
+    <color name="playlist_drag_color">#c0535353</color>
+    <color name="red_focus_color">#ffe31a1a</color>
+
+    <color name="app_bar_gradient_start">#ff0f0f0f</color>
+    <color name="app_bar_gradient_end">#ff1f1f1f</color>
+
+    <!-- Lighter accent for dark mode so it stays legible on dark surfaces. -->
+    <color name="color_primary">#ff8ab4f8</color>
+    <!-- Kept light: colorOnPrimary drives the toolbar title/icons, which sit on the dark app bar. -->
+    <color name="color_on_primary">#ffefefef</color>
+    <color name="color_primary_dark">#ff0f0f0f</color>
+
+    <color name="color_accent">#ff8ab4f8</color>
+
+    <color name="link_color">#ff8ab4f8</color>
+    <color name="divider_color">#ff333333</color>
+</resources>

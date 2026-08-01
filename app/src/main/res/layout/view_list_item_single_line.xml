@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Material 3 single-line list row for plain ArrayAdapter lists (servers, stored playlists).
+    Replaces the platform android.R.layout.simple_list_item_1 so these lists pick up M3 typography
+    and list metrics. Root is a TextView so ArrayAdapter binds toString() to it directly.
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="56dp"
+    android:gravity="center_vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:textAppearance="?attr/textAppearanceBodyLarge" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rounded M3 container for toolbar overflow / popup menus so they match the app's rounded
+     dialogs. colorSurfaceContainer is the Material 3 menu surface role. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="?attr/colorSurfaceContainer" />
+    <corners android:radius="16dp" />
+</shape>

@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".ui.player.PlayerActivity" >
+
+    <include layout="@layout/view_toolbar" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/player_view_pager_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/player_choice_bar"
+        android:layout_width="match_parent"
+        android:background="?choiceBarColor"
+        android:elevation="50px"
+        android:layout_height="50dp" >
+
+        <ImageButton
+            android:id="@+id/player_button_stored_playlists"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:contentDescription="@string/player_stored_playlists"
+            android:scaleType="fitStart"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_playlist" />
+
+        <ImageButton
+            android:id="@+id/player_button_library"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/player_music_library"
+            android:scaleType="center"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_library" />
+
+        <ImageButton
+            android:id="@+id/player_button_choice_menu"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/player_choice_menu"
+            android:scaleType="center"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_choice_menu_2" />
+
+        <ImageButton
+            android:id="@+id/player_button_search_library"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/player_search_library"
+            android:scaleType="center"
+            android:tint="?iconColor"
+            android:src="@drawable/ic_search" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        </LinearLayout>
+    
+</LinearLayout>

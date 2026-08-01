@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared app bar: a single toolbar carrying the gradient across the whole bar. Height is
+     wrap_content over a minHeight so the status-bar inset (applied as top padding in setupToolbar)
+     grows the bar instead of squeezing its content, and the gradient - being one view's background -
+     spans the status-bar strip and the toolbar seamlessly. -->
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    style="@style/Widget.App.Toolbar"
+    android:background="@drawable/app_bar_gradient"
+    app:backgroundTint="@null"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:elevation="4dp" />

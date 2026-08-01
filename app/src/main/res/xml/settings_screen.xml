@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/settings_category_connection">
+        <Preference app:iconSpaceReserved="false" app:title="@string/settings_servers_title" app:key="@string/settings_servers_key" app:summary="@string/settings_servers_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/settings_category_interface" >
+        <ListPreference app:iconSpaceReserved="false" app:key="@string/settings_interface_theme_mode_key" app:title="@string/settings_interface_theme_mode_title" app:entries="@array/settings_theme_mode_entries" app:entryValues="@array/settings_theme_mode_values" app:defaultValue="system" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/settings_category_player" >
+        <ListPreference app:iconSpaceReserved="false" app:entries="@array/settings_default_player_fragment_entries" app:title="@string/settings_default_player_fragment_title" app:entryValues="@array/settings_default_player_fragment_values" app:key="@string/settings_default_player_fragment_key" app:defaultValue="0" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_playlist_track_click_behaviour_key" app:title="@string/settings_playlist_track_click_behaviour_title" app:defaultValue="true" app:summaryOff="@string/settings_playlist_track_click_behaviour_summary_off" app:summaryOn="@string/settings_playlist_track_click_behaviour_summary_on" />
+        <ListPreference app:iconSpaceReserved="false" app:entries="@array/settings_volume_control_amount_entries" app:title="@string/settings_volume_control_amount_title" app:entryValues="@array/settings_volume_control_amount_values" app:key="@string/settings_volume_control_amount_key" app:defaultValue="1" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_control_show_output_key" app:title="@string/settings_control_show_output_title" app:defaultValue="false" app:summaryOff="@string/settings_control_show_output_summary_off" app:summaryOn="@string/settings_control_show_output_summary_on" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_control_options_show_toast_key" app:title="@string/settings_control_options_show_toast_title" app:defaultValue="true" app:summaryOff="@string/settings_control_options_show_toast_summary_off" app:summaryOn="@string/settings_control_options_show_toast_summary_on" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_playlist_show_priority_in_playlist_key" app:title="@string/settings_playlist_show_priority_in_playlist_title" app:defaultValue="false" app:summaryOff="@string/settings_playlist_show_priority_in_playlist_summary_off" app:summaryOn="@string/settings_playlist_show_priority_in_playlist_summary_on" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/settings_category_library" >
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_library_sort_album_by_artist_key" app:title="@string/settings_library_sort_album_by_artist_title" app:defaultValue="true" app:summaryOff="@string/settings_library_sort_album_by_artist_summary_off" app:summaryOn="@string/settings_library_sort_album_by_artist_summary_on" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_library_proper_sort_key" app:title="@string/settings_library_proper_sort_title" app:defaultValue="false" app:summaryOff="@string/settings_library_proper_sort_summary_off" app:summaryOn="@string/settings_library_proper_sort_summary_on" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_library_show_covers_for_all_albums_key" app:title="@string/settings_library_show_covers_for_all_albums_title" app:defaultValue="true" app:summaryOff="@string/settings_library_show_covers_for_all_albums_summary_off" app:summaryOn="@string/settings_library_show_covers_for_all_albums_summary_on" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_library_search_uri_key" app:title="@string/settings_library_search_uri_title" app:defaultValue="false" app:summaryOff="@string/settings_library_search_uri_summary_off" app:summaryOn="@string/settings_library_search_uri_summary_on" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/settings_category_behavior" >
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_behavior_pause_on_phonecall_key" app:title="@string/settings_behavior_pause_on_phonecall_title" app:defaultValue="false" app:summaryOff="@string/settings_behavior_pause_on_phonecall_summary_off" app:summaryOn="@string/settings_behavior_pause_on_phonecall_summary_on" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_behavior_show_notification_key" app:title="@string/settings_behavior_show_notification_title" app:defaultValue="false" app:summaryOff="@string/settings_behavior_show_notification_summary_off" app:summaryOn="@string/settings_behavior_show_notification_summary_on" />
+        <CheckBoxPreference app:iconSpaceReserved="false" app:key="@string/settings_behavior_override_volume_buttons_key" app:title="@string/settings_behavior_override_volume_buttons_title" app:defaultValue="true" app:summaryOff="@string/settings_behavior_override_volume_buttons_summary_off" app:summaryOn="@string/settings_behavior_override_volume_buttons_summary_on" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/settings_category_other" >
+        <Preference app:iconSpaceReserved="false" app:title="@string/settings_about_title" app:key="@string/settings_about_key" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

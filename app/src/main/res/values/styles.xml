@@ -1,0 +1,59 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shared base for day and night; the day/night AppTheme below differ only by text color. -->
+    <style name="AppBaseTheme" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="choiceBarColor">?android:colorBackground</item>
+        <item name="iconColor">@color/icon_color</item>
+        <item name="playlistDragColor">@color/playlist_drag_color</item>
+        <item name="redFocusColor">@color/red_focus_color</item>
+
+        <item name="android:colorPrimaryDark">@color/color_primary_dark</item>
+
+        <!-- colorPrimary is the app's adaptive accent. The app bar does NOT use it: it has
+             dedicated dark colors in @drawable/app_bar_gradient (see values/colors.xml). -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorSecondary">@color/color_accent</item>
+        <item name="colorControlActivated">@color/color_accent</item>
+
+        <!-- The app's plain <Button>s are flat/borderless (they set selectableItemBackground); render
+             them as Material3 text buttons so their label uses colorPrimary and stays visible. -->
+        <item name="materialButtonStyle">@style/Widget.Material3.Button.TextButton</item>
+
+        <!-- androidx.preference styles its screens through this overlay; without it the category
+             titles and widget tints do not pick up the app's colors. -->
+        <item name="preferenceTheme">@style/AppPreferenceTheme</item>
+
+        <!-- Give toolbar overflow / popup menus a rounded M3 container so they match the app's
+             rounded dialogs. Material draws the menu popup from this theme attribute. -->
+        <item name="popupMenuBackground">@drawable/popup_menu_background</item>
+
+    </style>
+
+    <!-- Day theme: use a darker body text than Material's default. The night override in
+         values-night/styles.xml keeps Material's adaptive (lighter) text color. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="AppPreferenceTheme" parent="@style/PreferenceThemeOverlay">
+        <item name="preferenceCategoryTitleTextColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Toolbar style whose materialThemeOverlay keeps the title and icons light on the always-dark
+         app bar, regardless of the (surface-based) Material3 defaults. Using materialThemeOverlay
+         (rather than android:theme) so it applies even though the toolbar is <include>d. -->
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar</item>
+        <item name="titleTextColor">@color/color_on_primary</item>
+        <item name="subtitleTextColor">@color/color_on_primary</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="colorOnSurface">@color/color_on_primary</item>
+        <item name="colorOnSurfaceVariant">@color/color_on_primary</item>
+        <item name="colorControlNormal">@color/color_on_primary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Keep the server configuration (Servers.db holds host/port/password in plaintext) out of
+    Google cloud backup so the MPD password is never synced off-device. Device-to-device transfer
+    is intentionally left at its default (included) so migrating to a new phone keeps the server list.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="database" path="Servers.db" />
+    </cloud-backup>
+</data-extraction-rules>
